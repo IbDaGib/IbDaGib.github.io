@@ -7,15 +7,16 @@
 /* Custom Properties, update these for your own design */
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-primary: 'Sora', sans-serif;
+    --ff-secondary: 'Sora', sans-serif;
     
     --fw-reg: 300;
     --fw-bold: 900;
-    
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+
+    /* I inverted the colors here */
+    --clr-light: rgb(238,238,238);
+    --clr-dark: rgb(19,19,19);;
+    --clr-accent: #6a16e0;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -147,8 +148,8 @@ header {
 
 .nav {
     position: fixed;
-    background: var(--clr-dark);
-    color: var(--clr-light);
+    background: var(--clr-light);
+    color: var(--clr-dark);
     top: 0;
     bottom: 0;
     left: 0;
@@ -225,7 +226,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -294,11 +295,11 @@ header {
 /*  My services section  */
 
 .my-services {
-    background-color: var(--clr-dark);
+    background-color: var(--clr-light);
     background-image: url(../img/services-bg.jpg);
     background-size: cover;
     /* background-blend-mode: multiply; */
-    color: var(--clr-light);
+    color: var(--clr-dark);
     text-align: center;
 }
 
@@ -384,8 +385,8 @@ header {
 /* My Work */
 
 .my-work {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
     text-align: center;    
 }
 
