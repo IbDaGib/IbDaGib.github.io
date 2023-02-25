@@ -85,7 +85,6 @@ strong { font-weight: var(--fw-bold) }
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem;
-    text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 500ms ease-in-out;
@@ -185,10 +184,11 @@ header {
 .nav {
     position: fixed;
     background: var(--clr-navyblue);
+    opacity: 0.90;
     color: var(--clr-mint);
     top: 0;
     bottom: 0;
-    left: 20em;
+    left: 70%;
     right: 0;
     z-index: 100;
     
@@ -231,6 +231,7 @@ header {
 
 .nav-open .nav {
     transform: translateX(0);
+    right: 14px;
 }
 
 .nav-open .nav-toggle {
@@ -415,6 +416,7 @@ header {
 }
 
 .about-me__img {
+    min-width: 200px;
     box-shadow: var(--bs);
     transition: transform 250ms ease-in-out;
 }
@@ -509,8 +511,9 @@ header {
 /* footer */
 
 .footer {
-    background: #111;
-    color: var(--clr-evergreen);
+    background: var(--clr-navyblue);
+    opacity: .75;
+    color: var(--clr-light);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
@@ -551,6 +554,13 @@ header {
     padding: .5em;
 }
 
+.social-list__item{
+    transition: 250ms ease-in-out;
+}
+
+.social-list__item:hover {
+    transform: scale(1.3);
+}
 
 /* Individual portfolio item styles */
 
